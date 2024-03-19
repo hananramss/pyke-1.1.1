@@ -1,0 +1,17 @@
+# Facts for the investor scenario
+
+has_least_10000(A)
+younger_than_30(B)
+college_education(C) 
+annual_income_at_least_40000(D)  
+invest_in_securities(E) 
+invest_in_growth_stocks(F)  
+invest_in_IBM_stocks(G) 
+
+A(True) 
+B(True) 
+C(True)  
+D(True) 
+E(True)  
+F(True)  
+G(True)  

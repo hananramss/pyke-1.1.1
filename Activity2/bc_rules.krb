@@ -1,0 +1,36 @@
+# Rule 1: If a person has at least Php 10,000 and is younger than 30, then she should invest in IBM stocks.
+invest_on_IBM_stock
+    use invest_on_IBM_stock("Invest in IBM stocks.")
+    when
+        facts.A(True)  # has at least Php 10,000
+        facts.C(True)  # Education at college level
+
+# Rule 2: If a person’s annual income is at least Php 40,000 AND she has a college degree, THEN she should invest in growth stocks.
+invest_in_growth_stocks
+    use invest_in_growth_stocks("Invest in growth stocks.")
+    when
+        facts.D(True)  # Annual income of at least Php 40,000
+        facts.C(True)  # Education at college level
+
+# Rule 3: If a person is younger than thirty AND she is investing in securities, THEN she should invest in growth stocks.
+invest_in_growth_stocks_from_securities
+    use invest_in_growth_stocks_from_securities("Invest in growth stocks.")
+    when
+        facts.B(True)  # Younger than 30
+        facts.E(True)  # invest in securities
+
+# Rule 4: If a person is younger than thirty, THEN she has a college degree.
+college_education_for_younger_than_30
+    use college_education_for_younger_than_30("Education at college level.")
+    when
+        facts.B(True)  # Younger than 30
+
+# Rule 5: If a person wants to invest in growth stocks, THEN the stock should be IBM.
+invest_in_IBM_from_growth_stocks
+    use invest_in_IBM_from_growth_stocks("Invest in IBM stocks.")
+    when
+        facts.F(True)  # Invest in growth stocks
+
+
+
+
